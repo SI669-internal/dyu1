@@ -1,17 +1,3 @@
-/*
-Objects
-- syntax
-- accessing properties in different ways
-- adding and deleting properties
-- methods
-
-Classes
-- constructors
-- methods
-- this
-
-*/
-
 
 let fido = {
     species: "dog",
@@ -37,26 +23,6 @@ for (a of [fido, morris]) {
     console.log(a.speak());
 }
 
-/*
- In the object fido, what is the role of 'breed'?
- - property
- - constructor
- - value
- - method
- 
- In the object morris, what is the role of 'speak'?
- - key/value
- - method
- - constructor
- - this
-
- In the loop at lines 36-38, it's possible to call a.speak() because
- - both fido and morris are instances of the same class
- - both fido and morris have a method called 'speak()'
- - a.speak() will never execute, because the loop executes 0 times
- - fido and morris have all of the same properties and methods
- */
-
 let studentRegistry = {};
 let studentNames = [
     "Mary Shelley",
@@ -79,25 +45,9 @@ for (let id of [1, 3, 8]) {
 
 console.log(studentRegistry);
 
-/*
- After running the above code (lines 70-72), in the object studentRegistry, what is the property associated with the value "Thomas Hardy"?
- - Jane Austen
- - string
- - '3'
- - studentNames[3]
- 
-After running 76-78, how many properties does studentRegistry contain?
-- 6
-- 0
-- 3
-- 4
 
-After running 76-78, what is the value of studentRegistry[1]?
-- Charles Dickens
-- Jane Austen
-- Mary Shelley
-- undefined
- */
+
+
 
 class MenuItem {
      constructor(name, price, calories) {
@@ -126,21 +76,3 @@ for (item of order) {
 }
 
 console.log(total);
-
-/* 
-What is the difference between price and discountPrice in the class MenuItem?
-- discountPrice will always be lower than price
-- price is a class property, discountPrice is a class member
-- all instances of MenuItem will have a price but only some will have a discountPrice
-- price is a string, discountPrice is a number
-
-
-In what order do the lines of code execute in the above code?
-- 103, 109, 115, 120, 125
-- 115, 103, 120, 125, 109
-- 125, 109, 115, 120, 103
-- 120, 115, 109, 125, 103
-
-
-
-*/
